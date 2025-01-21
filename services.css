@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  /* background: #0073e6; */
+  color: black;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 0.6s ease-out forwards;
+}
+
+.service.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.service-text {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.service h2 {
+  color: #0073e6;
+  margin-bottom: 0.5rem;
+}
+
+.service ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.service ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Keyframe animation for sliding in */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(20px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animation delay for each service to make them appear one by one */
+.service:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.service:nth-child(2) {
+  animation-delay: 0.9s;
+}
+
+.service:nth-child(3) {
+  animation-delay: 1.8s;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}

@@ -1,0 +1,128 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.product-details-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.product-image-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 5px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-description {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+#product-name {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#product-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+h2 {
+    font-size: 1.6em;
+    color: #4CAF50;
+    margin-top: 30px;
+}
+
+.product-features-container,
+.product-applications-container,
+.product-advantages-container,
+.product-disadvantages-container {
+    margin-top: 20px;
+}
+
+.product-features {
+    list-style: none;
+    padding-left: 0;
+}
+
+.product-features li {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    background: url('check-icon.png') no-repeat left center;
+    padding-left: 30px;
+}
+
+.product-features li::before {
+    content: "✔";
+    color: #4CAF50;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.product-features li:last-child {
+    margin-bottom: 0;
+}
+
+/* Optional: Add a subtle hover effect for each section */
+.product-features-container:hover,
+.product-applications-container:hover,
+.product-advantages-container:hover,
+.product-disadvantages-container:hover {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.product-features-container h2,
+.product-applications-container h2,
+.product-advantages-container h2,
+.product-disadvantages-container h2 {
+    font-size: 1.5em;
+    color: #4CAF50;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-details-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .product-image-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .product-description {
+        text-align: center;
+    }
+}

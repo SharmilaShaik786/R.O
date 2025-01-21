@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.blog-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-preview {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.blog-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+h2 a:hover {
+    color: #0056b3;
+}

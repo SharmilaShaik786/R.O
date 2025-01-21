@@ -1,0 +1,135 @@
+/* General reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* First Section - Map */
+#map-section {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 50px; /* Adds space between map and the next section */
+}
+
+/* Second Section - Contact Info */
+#contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+/* Left Section - Office Info */
+#office-info {
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 30px;
+    width: 45%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#office-info h3 {
+    color: #FF7F50; /* You can choose a color */
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#office-info p {
+    margin-bottom: 10px;
+}
+
+#office-info i {
+    color: #FF7F50;
+}
+
+#office-info a {
+    color: #FF7F50;
+    text-decoration: none;
+}
+
+#office-info a:hover {
+    text-decoration: underline;
+}
+
+#office-info ul {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+#office-info ul li {
+    margin-bottom: 8px;
+}
+
+/* Right Section - Contact Form */
+#contact-form {
+    background-color: #fff;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form h2 {
+    color: #FF7F50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+#contact-form button {
+    background-color: #FF7F50;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact-form button:hover {
+    background-color: #FF6F3A;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #office-info,
+    #contact-form {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #map-section iframe {
+        height: 350px; /* Adjust map size on smaller screens */
+    }
+}

@@ -1,0 +1,73 @@
+/* Resetting some default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .about-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    opacity: 0;
+    animation: fadeInContainer 1s forwards;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeIn 1.5s 0.5s forwards; /* Delay image fade-in */
+  }
+  
+  .content h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 1.5s 1s forwards; /* Delay heading fade-in */
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeIn 1.5s 1.5s forwards; /* Delay paragraph fade-in */
+  }
+  
+  /* Animation for fade-in effect */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Animation for the overall container */
+  @keyframes fadeInContainer {
+    to {
+      opacity: 1;
+    }
+  }
+  
